@@ -1,30 +1,33 @@
 {
   "name": "@beaker/dat-serve-resolve-path",
-  "version": "1.0.1",
-  "description": "Beaker's method to find the file to serve in dat:// requests",
-  "main": "index.js",
+  "version": "1.0.2",
+  "description": "Beaker's method to find the file to serve in dat:// requests.",
+  "main": "dist.js",
   "scripts": {
     "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist.js && rimraf node_modules"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/beakerbrowser/dat-serve-resolve-path.git"
+    "url": "git+https://github.com/Alex313031/dat-serve-resolve-path.git"
   },
   "keywords": [
+    "beaker",
     "dat"
   ],
   "author": "Paul Frazee <pfrazee@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/beakerbrowser/dat-serve-resolve-path/issues"
+    "url": "https://github.com/Alex313031/dat-serve-resolve-path/issues"
   },
-  "homepage": "https://github.com/beakerbrowser/dat-serve-resolve-path#readme",
+  "homepage": "https://github.com/Alex313031/dat-serve-resolve-path#readme",
   "dependencies": {
-    "parse-dat-url": "^3.0.2"
+    "parse-dat-url": "^3.0.3"
   },
   "devDependencies": {
-    "webpack": "^4.38.0",
-    "webpack-cli": "^3.3.6"
+    "rimraf": "3.0.2",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
   }
 }
